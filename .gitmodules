@@ -1,0 +1,9 @@
+[submodule "qr.flutter"]
+	path = qr.flutter
+	url = https://github.com/splangi/qr.flutter
+[submodule "qr.dart"]
+	path = qr.dart
+	url = https://github.com/kevmoo/qr.dart
+[submodule "ehn-dcc-schema"]
+	path = ehn-dcc-schema
+	url = https://github.com/ehn-dcc-development/ehn-dcc-schema
