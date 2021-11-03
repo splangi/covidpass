@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:cbor/cbor.dart';
-import 'package:coronapass/certificate.dart';
+import 'package:coronapass/model/certificate.dart';
 import 'package:dart_base45/dart_base45.dart';
 
 class CertificateDecoder {

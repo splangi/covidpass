@@ -1,5 +1,5 @@
-import 'package:coronapass/certificate.dart';
-import 'package:coronapass/certificate_storage.dart';
+import 'package:coronapass/model/certificate.dart';
+import 'package:coronapass/util/certificate_storage.dart';
 import 'package:coronapass/generated/l10n.dart';
 import 'package:coronapass/screen/certificate_screen.dart';
 import 'package:coronapass/widget/certificate_person.dart';
@@ -15,7 +15,6 @@ class CertificateDetailsScreen extends StatelessWidget {
 
   static Route generateRoute(BuildContext context,
       {required Certificate certificate}) {
-    const CupertinoPageTransitionsBuilder();
     return PageRouteBuilder(
 
         pageBuilder: (context, _, __) {
@@ -90,7 +89,6 @@ class CertificateDetailsBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Widget infoWidget;
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -147,6 +145,5 @@ class CertificateInfo extends StatelessWidget {
           certificate: certificateData.testCertificate!,
         );
     }
-    ;
   }
 }

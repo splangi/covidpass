@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:coronapass/certificate_storage.dart';
+import 'package:coronapass/util/certificate_storage.dart';
 import 'package:coronapass/generated/l10n.dart';
 import 'package:coronapass/model/vaccine_auth_holder.dart';
 import 'package:coronapass/model/vaccine_product.dart';
@@ -9,11 +9,10 @@ import 'package:coronapass/model/vaccine_prophylaxis.dart';
 import 'package:coronapass/model/valueset.dart';
 import 'package:coronapass/screen/certificate_screen.dart';
 import 'package:coronapass/screen/code_scanner_screen.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_localized_locales/flutter_localized_locales.dart';
-import 'package:intl/date_symbol_data_local.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -23,7 +22,6 @@ void main() async {
 
 ThemeData buildTheme() {
   const primaryColor = Color(0xFFFFE5BD);
-  const background = Color(0xFFBDE7FF);
 
   return ThemeData(
       primaryColor: primaryColor,
@@ -82,7 +80,7 @@ class LocaleNotifier extends ChangeNotifier {
 
   Locale get locale => _locale;
 
-  static Locale get _platformLocale => Locale(Platform.localeName.split("_").first);
+  static Locale get _platformLocale => kIsWeb ? const Locale("et") : Locale(Platform.localeName.split("_").first);
 
   set locale(Locale locale) {
     _locale = locale;
@@ -173,8 +171,6 @@ class ProviderWrapper extends StatelessWidget {
 }
 
 class MyApp extends StatefulWidget {
-
-
 
   const MyApp({Key? key}) : super(key: key);
 

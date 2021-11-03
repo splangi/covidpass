@@ -1,8 +1,8 @@
 import 'dart:convert';
 import 'dart:developer';
 
-import 'package:coronapass/cert_decoder.dart';
-import 'package:coronapass/certificate.dart';
+import 'package:coronapass/util/cert_decoder.dart';
+import 'package:coronapass/model/certificate.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:rxdart/rxdart.dart';
 

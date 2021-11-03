@@ -1,4 +1,4 @@
-import 'package:coronapass/certificate.dart';
+import 'package:coronapass/model/certificate.dart';
 import 'package:coronapass/generated/l10n.dart';
 import 'package:coronapass/widget/certificate_row.dart';
 import 'package:flutter/material.dart';

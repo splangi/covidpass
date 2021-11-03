@@ -1,9 +1,8 @@
-import 'package:coronapass/certificate.dart';
+import 'package:coronapass/model/certificate.dart';
 import 'package:coronapass/extensions/iterable_extensions.dart';
 import 'package:coronapass/generated/l10n.dart';
 import 'package:coronapass/model/vaccine_auth_holder.dart';
 import 'package:coronapass/model/vaccine_product.dart';
-import 'package:coronapass/model/vaccine_prophylaxis.dart';
 import 'package:coronapass/model/valueset.dart';
 import 'package:coronapass/widget/certificate_row.dart';
 import 'package:flutter/material.dart';
@@ -111,7 +110,6 @@ class RecoveryInfo extends StatelessWidget {
         CertRow(title: S.of(context).country, value: certificate.country),
       ],
     );
-    ;
   }
 }
 

@@ -1,5 +1,5 @@
-import 'package:coronapass/certificate.dart';
-import 'package:coronapass/certificate_storage.dart';
+import 'package:coronapass/model/certificate.dart';
+import 'package:coronapass/util/certificate_storage.dart';
 import 'package:coronapass/generated/l10n.dart';
 import 'package:coronapass/screen/certificate_details.dart';
 import 'package:coronapass/screen/code_scanner_screen.dart';
@@ -228,7 +228,7 @@ class CertificateCard extends StatelessWidget {
         break;
       case CertificateType.test:
         final testData = certificate.data.testCertificate!;
-        subtitle = "${dfTest.format(testData.testSampleCollectionTime)}";
+        subtitle = dfTest.format(testData.testSampleCollectionTime);
         break;
     }
     return Text(
