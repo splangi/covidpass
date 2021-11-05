@@ -1,16 +1,22 @@
-# coronapass
+# CoronaPass
 
-A new Flutter project.
+An app to scan and display EU Covid certificates.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Requirements
 
-A few resources to get you started if this is your first Flutter project:
+flutter version 2.5.0 or higher
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+### Running
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+flutter run (--release for release build)
+
+### Building Android
+
+builds for Google Play: flutter build appbundle
+build for installing directly on Android devices: flutter build apk
+
+### Building iOS
+
+flutter build ios
