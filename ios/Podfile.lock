@@ -45,9 +45,9 @@ SPEC CHECKSUMS:
   MTBBarcodeScanner: f453b33c4b7dfe545d8c6484ed744d55671788cb
   permission_handler: ccb20a9fad0ee9b1314a52b70b76b473c5f8dab0
   qr_code_scanner: bb67d64904c3b9658ada8c402e8b4d406d5d796e
-  shared_preferences: 5033afbb22d372e15aff8ff766df9021b845f273
+  shared_preferences: af6bfa751691cdc24be3045c43ec037377ada40d
   wakelock: d0fc7c864128eac40eba1617cb5264d9c940b46f
 
 PODFILE CHECKSUM: 96acfcb6b58515a8b4895d2d324b13b69a838c89
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.11.2
